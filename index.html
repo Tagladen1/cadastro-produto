@@ -43,21 +43,42 @@
   </div>
 
   <!-- Template do Formulário -->
-  <template id="form-template">
-    <div class="mb-3">
-      <label for="nome" class="form-label">Nome</label>
-      <input type="text" class="form-control" name="nome" required>
+<template id="form-template">
+    <div class="row">
+    <div class="col-md-4">
+      <label for="cod" class="form-label">Código do produto:</label>
+      <input type="cod" class="form-control" name="cod" required>
     </div>
-    <div class="mb-3">
-      <label for="endereco" class="form-label">Endereço</label>
-      <input type="text" class="form-control" name="endereco" required>
+    <div class="col-md-8">
+      <label for="desc" class="form-label">Descrição do produto:</label>
+      <input type="desc" class="form-control" name="desc" required>
     </div>
-    <div class="mb-3">
-      <label for="telefone" class="form-label">Telefone</label>
-      <input type="tel" class="form-control" name="telefone" required>
+    <div class="col-md-3">
+      <label for="quant" class="form-label">Quantidade em estoque:</label>
+      <input type="quant" class="form-control" name="quant" required>
     </div>
-  </template>
-
+    <div class="col-md-3">
+      <label for="larg" class="form-label">Largura do pacote(cm):</label>
+      <input type="larg" class="form-control" name="larg" required>
+    </div>
+     <div class="col-md-3">
+      <label for="art" class="form-label">Altura do pacote(cm):</label>
+      <input type="art" class="form-control" name="alt" required>
+    </div>
+     <div class="col-md-3">
+      <label for="profun" class="form-label">Profundidade do pacote(cm):</label>
+      <input type="profun" class="form-control" name="profun" required>
+    </div>
+     <div class="col-md-6">
+      <label for="peso" class="form-label">Peso do pacote(kg):</label>
+      <input type="peso" class="form-control" name="peso" required>
+    </div>
+     <div class="col-md-6">
+      <label for="preco" class="form-label">Preço de venda(R$):</label>
+      <input type="preco" class="form-control" name="preco" required>
+    </div>
+    </div>
+</template>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="crud.js"></script>
 </body>
