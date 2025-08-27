@@ -99,8 +99,12 @@ let frete;
 if peso1<=0.30{
   frete=8.0;
 } else if peso1<=1.00 and (larg<50.0 or alt<50.0 or profun<50.0){
-    frte=15.0;
+    frete=15.0;
+  
+}else{
+  frete=30.0;  
 }
+alert('O frete é de {frete} reais')  
 }
     
   </script>
