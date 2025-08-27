@@ -71,11 +71,11 @@
     </div>
      <div class="col-md-6">
       <label for="peso" class="form-label">Peso do pacote(kg):</label>
-      <input type="peso" class="form-control" name="peso" required>
+      <input type="peso" class="form-control" id='peso' name="peso" required>
     </div>
      <div class="col-md-6">
       <label for="preco" class="form-label">Preço de venda(R$):</label>
-      <input type="preco" class="form-control" name="preco" required>
+      <input type="preco" class="form-control" id='preco' name="preco" required>
     </div>
       <div class="col-md-12">
       <button onclick='calcularFrete()'>Calcular frete
@@ -85,6 +85,11 @@
 </template>
   <script> function calcularFrete(){
 alert('Estou aqui');
+let preco2=document.querySelector('#preco');
+let peso2=document.querySelector('#peso');
+let preco1=parseInt(preco2.value);
+let peso1=parseInt(peso2.value);
+let frete;
   
 }
     
