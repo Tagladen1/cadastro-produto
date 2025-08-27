@@ -59,15 +59,15 @@
     </div>
     <div class="col-md-3">
       <label for="larg" class="form-label">Largura do pacote(cm):</label>
-      <input type="larg" class="form-control" name="larg" required>
+      <input type="larg" class="form-control" id='larg' name="larg" required>
     </div>
      <div class="col-md-3">
       <label for="art" class="form-label">Altura do pacote(cm):</label>
-      <input type="art" class="form-control" name="alt" required>
+      <input type="art" class="form-control" id='alt' name="alt" required>
     </div>
      <div class="col-md-3">
       <label for="profun" class="form-label">Profundidade do pacote(cm):</label>
-      <input type="profun" class="form-control" name="profun" required>
+      <input type="profun" class="form-control" id='profun' name="profun" required>
     </div>
      <div class="col-md-6">
       <label for="peso" class="form-label">Peso do pacote(kg):</label>
@@ -87,10 +87,20 @@
 alert('Estou aqui');
 let preco2=document.querySelector('#preco');
 let peso2=document.querySelector('#peso');
-let preco1=parseInt(preco2.value);
-let peso1=parseInt(peso2.value);
+let larg2=document.querySelector('#larg');
+let alt2=document.querySelector('#alt');  
+let profun2=document.querySelector('#profun');
+let larg1=parseFloat(larg2.value);
+let alt1=parseFloat(alt2.value);
+let profun1=parseFloat(proun2.value);
+let preco1=parseFloat(preco2.value);
+let peso1=parseFloat(peso2.value);
 let frete;
-  
+if peso1<=0.30{
+  frete=8.0;
+} else if peso1<=1.00 and (larg<50.0 or alt<50.0 or profun<50.0){
+    frte=15.0;
+}
 }
     
   </script>
