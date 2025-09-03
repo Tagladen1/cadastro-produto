@@ -96,9 +96,9 @@ let profun1=parseFloat(proun2.value);
 let preco1=parseFloat(preco2.value);
 let peso1=parseFloat(peso2.value);
 let frete;
-if peso1<=0.30{
+if (peso1<=0.30){
   frete=8.0;
-}else if peso1<=1.00 and (larg1<50.0 or alt1<50.0 or profun1<50.0){
+}else if (peso1<=1.00 and (larg1<50.0 or alt1<50.0 or profun1<50.0)){
     frete=15.0;
 }else{
   frete=30.0;  
